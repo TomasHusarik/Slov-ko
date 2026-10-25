@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-10-25",
+  "ranks": 14855,
+  "counts": {
+    "a1": 507,
+    "a2": 839,
+    "b1": 1484,
+    "b2": 2121,
+    "c1": 2169,
+    "c2": 2205
+  },
+  "sources": {
+    "frequency": "Wiktionary:Frequency lists/Czech wordlist (SYN2015, Czech National Corpus, CC BY 4.0)",
+    "meanings": "English Wiktionary, Czech entries (CC BY-SA 4.0)"
+  }
+}
