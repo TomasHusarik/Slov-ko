@@ -13,6 +13,18 @@ bun run build
 bun run wordbank   # regenerate src/data/wordbank/*.json from Wiktionary (resumable)
 ```
 
+## Deploy to GitHub Pages
+
+`.github/workflows/deploy.yml` builds and publishes the app on every push to `main`. The site lives at **https://tomashusarik.github.io/Slov-ko/**.
+
+One-time setup: in the repository open **Settings → Pages → Build and deployment → Source** and choose **GitHub Actions**.
+
+The workflow sets `BASE_PATH=/<repository>/` for the build, which `vite.config.ts` uses as Vite's `base`. Local `bun run dev` keeps serving from `/`. To preview the Pages build locally:
+
+```bash
+BASE_PATH=/Slov-ko/ bun run build && BASE_PATH=/Slov-ko/ bunx vite preview   # http://localhost:4173/Slov-ko/
+```
+
 ## Word pool
 
 | Source | What | Level |
